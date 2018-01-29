@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Souk</string>
+    <string name="action_settings">Settings</string>
+    <string name="image_details_header">Details:</string>
+    <string name="image_preview_header">Preview:</string>
+    <string name="loading_message">Uploading image. Please wait.</string>
+    <string name="CLOUD_VISION_API_KEY">AIzaSyDy1TC-OG5kLsgdEOUiC6uSv-hRWUCCreY</string>
+   <string name="FILE_NAME">temp.jpg</string>
+   <string name="ANDROID_CERT_HEADER">X-Android-Cert</string>
+    <string name="ANDROID_PACKAGE_HEADER">X-Android-Package</string>
+
+    <!--error messaages-->
+    <string name="error_notext">Please give in a product!</string>
+    <string name="error_text_too_long">Sorry , the product name is too long!</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="Search">Search</string>
+    <string name="Popularity">Popularity</string>
+    <string name="StrictSearch">Strict Search</string>
+    <string name="Sort">Sort</string>
+    <string name="Off">Off</string>
+    <string name="On">On</string>
+    <string name="HintProduct">Type in your product&#8230;</string>
+    <string name="urlFlipkart">https://www.flipkart.com/search?p%5B%5D=sort%3Drelevance&amp;q=</string>
+    <string name="urlAmazon">https://www.amazon.in/s/ref=sr_st_relevanceblender&amp;sort=relevanceblender?keywords=</string>
+    <string name="urlSnapdeal">https://www.snapdeal.com/search?sort=rlvncy&amp;keyword=</string>
+    <string name="urlFlipkartPop">https://www.flipkart.com/search?p%5B%5D=sort%3Drelevance&amp;q=</string>
+    <string name="urlAmazonPop">https://www.amazon.in/s/ref=sr_st_review-rank?sort=review-rank&amp;keywords=</string>
+    <string name="urlSnapdealPop">https://www.snapdeal.com/search?sort=plrty&amp;keyword=</string>
+    <string name="Flipkart">Flipkart</string>
+    <string name="Snapdeal">Snapdeal</string>
+    <string name="Amazon">Amazon</string>
+    <string name="About">Use Souk to get the best prices across different e-commerce websites! Websites supported as of now are :<br/>
+        <ol><li>Amazon</li><br/>
+            <li>Snapdeal</li><br/>
+            <li>Flipkart</li></ol></string>
+
+    <string name="intro">Use the floating action button to select an image.You have 3 options to choose from to get the details of the image :
+                             <b>1.Labels</b><br/>
+                             <b>2.Logos</b><br/>
+                             <b>3.Text</b><br/></string>
+
+    <string name="dialog_select_prompt">Choose a picture</string>
+    <string name="dialog_select_camera">Camera</string>
+    <string name="dialog_select_gallery">Gallery</string>
+
+    <string name="image_picker_error">Something is wrong with that image. Pick a different one please.</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+
+    <string name="mb_button">Button</string>
+</resources>

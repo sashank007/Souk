@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="150dp"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_productname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageViewProduct"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:text="ProductName"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_productprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageViewProduct"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="5dp"
+        android:text="ProductPrice"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageViewProvider"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="TODO"
+        android:elevation="8dp"
+        app:srcCompat="@drawable/snapdeal_logo" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_productprice"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_launcher_background"   />
+
+
+</RelativeLayout>

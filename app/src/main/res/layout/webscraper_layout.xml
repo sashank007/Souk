@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLighter">
+
+    <Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:titleTextColor="#ffffff" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/et_product"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="31dp"
+        android:descendantFocusability="beforeDescendants"
+        app:mtf_cardCollapsedHeight="4dp"
+        app:hintTextAppearance="@style/MyAppearance"
+        app:errorEnabled="true"
+        android:textColorHint="@color/colorAccent"
+
+        app:mtf_labelColor="@color/colorAccent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_productText"
+            android:layout_width="match_parent"
+            android:imeOptions="actionGo"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/HintProduct"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+
+            android:textSize="15sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_product"-->
+    <!--style="@android:style/Widget.Holo.EditText"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+
+
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_below="@+id/my_toolbar"-->
+    <!--android:layout_marginTop="52dp"-->
+    <!--android:background="@drawable/rounded_edittext"-->
+    <!--android:defaultFocusHighlightEnabled="true"-->
+    <!--android:hint="Type in your product..."-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:padding="10dp"-->
+    <!--android:textAlignment="center" />-->
+
+    <Button
+        android:id="@+id/search_btn"
+
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/search_bar_width"
+        android:layout_height="@dimen/search_bar_height"
+
+        android:layout_below="@+id/et_product"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="84dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="@string/Search"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/scrollView2"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_below="@+id/search_btn"-->
+    <!--android:layout_marginTop="11dp"-->
+
+    <!--android:foregroundGravity="center">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/image_details"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Image Details"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="15sp" />&ndash;&gt;-->
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+
+    <Switch
+        android:id="@+id/switch_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_product"
+        android:layout_below="@+id/switch_strictsearch"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/Popularity"
+        android:textColor="@color/colorPrimary"
+        android:textOff="@string/Off"
+        android:textOn="@string/On" />
+
+
+    <Switch
+        android:id="@+id/switch_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/switch_popularity"
+        android:layout_below="@+id/switch_popularity"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/Sort"
+        android:textColor="@color/colorPrimary"
+        android:textOff="@string/descending"
+        android:textOn="@string/ascending" />
+
+    <Switch
+        android:id="@+id/switch_strictsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/switch_popularity"
+        android:layout_below="@+id/search_btn"
+        android:layout_marginTop="59dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/StrictSearch"
+        android:textColor="@color/colorPrimary"
+        android:textOff="@string/Off"
+        android:textOn="@string/On" />
+
+    <TextView
+        android:id="@+id/tv_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/switch_sort"
+        android:layout_alignBottom="@+id/switch_sort"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ascending"
+        android:textColor="@color/colorAccent"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/switch_popularity"
+        android:layout_alignBottom="@+id/switch_popularity"
+        android:layout_alignStart="@+id/tv_sort"
+        android:text="@string/Off"
+        android:textColor="@color/colorAccent"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_strictsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/switch_strictsearch"
+        android:layout_alignBottom="@+id/switch_popularity"
+        android:layout_alignStart="@+id/tv_sort"
+        android:text="@string/Off"
+        android:textColor="@color/colorAccent"
+        android:textSize="10sp" />
+
+    <!--<Button-->
+    <!--android:id="@+id/image_search"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_alignStart="@+id/switch_sort"-->
+    <!--android:layout_below="@+id/materialTextField"-->
+    <!--android:layout_marginTop="21dp"-->
+    <!--android:drawableStart="@android:drawable/ic_menu_camera" />-->
+
+
+</RelativeLayout>
